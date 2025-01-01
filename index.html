@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create Your Digital Resume</h1>
+            <p>Fill in your details below to generate your professional resume</p>
+        </header>
+        <form id="resumeForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="linkedin">LinkedIn:</label>
+                <input type="url" id="linkedin" placeholder="Enter your LinkedIn profile URL">
+            </div>
+            <div class="form-group">
+                <label for="summary">Summary:</label>
+                <textarea id="summary" placeholder="Briefly describe yourself"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <textarea id="skills" placeholder="List your skills (comma-separated)"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="projects">Projects:</label>
+                <textarea id="projects" placeholder="Describe your projects"></textarea>
+            </div>
+            <button type="button" id="generateResume">Generate Resume</button>
+        </form>
+
+        <div class="resume hidden" id="resume">
+            <h2 id="displayName"></h2>
+            <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+            <p><strong>LinkedIn:</strong> <a href="#" id="displayLinkedIn" target="_blank"></a></p>
+            <h3>Summary</h3>
+            <p id="displaySummary"></p>
+            <h3>Skills</h3>
+            <p id="displaySkills"></p>
+            <h3>Projects</h3>
+            <p id="displayProjects"></p>
+            <button id="downloadResume">Download Resume</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

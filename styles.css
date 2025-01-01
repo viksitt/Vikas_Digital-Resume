@@ -1,0 +1,146 @@
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #4CAF50;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+textarea {
+    min-height: 80px;
+}
+
+button {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Resume Output Styles */
+.resume {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.resume.hidden {
+    display: none;
+}
+
+.resume h2 {
+    color: #4CAF50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.resume p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.resume a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.resume a:hover {
+    text-decoration: underline;
+}
+
+.resume h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: #4CAF50;
+}
+
+#downloadResume {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .resume h2 {
+        font-size: 1.5rem;
+    }
+
+    .resume h3 {
+        font-size: 1.2rem;
+    }
+}
